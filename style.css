@@ -48,4 +48,40 @@ Universal tags
 
 
 
+/* Typography를 통해 
+웹사이트 전반적으로 쓰여진 패딩과 텍스트에 대해서 스타일링을 먼저 한다
+*/
+
+h1 {
+    font-size: var(--font-large);
+    font-weight: var(var(--weight-bold));
+    color: var(--color-black);
+    margin: 16px 0;
+/* margin 두 개 쓰면 첫 번째 것은 위아래 두 번째 것은 양옆이다. */
+}
+
+h2{
+    font-size: var(--font-regular);
+    font-weight: var(var(--weight-semi-bold));
+    color: var(--color-black);
+    margin: 8px 0;
+}
+
+h3{
+    font-size: var(--font-regular);
+    font-weight: var(var(--weight-regular));
+    color: var(--color-black);
+    margin: 8px 0;
+}
+
+
+p{
+    font-size: var(--font-regular);
+    font-weight: var(var(--weight-regular));
+    color: var(--color-black);
+    margin: 4px 0;
+}
+
+
+
 
