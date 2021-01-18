@@ -1,0 +1,51 @@
+/* 
+Global 세팅
+css에서도 프로그래밍 변수를 지정하는 것처럼 할 수 있다.   
+:root{}가 시작이다. 
+
+*/
+:root{
+/* Color */
+--color-white: #ffffff;
+--color-light-white: #eeeeee;
+--color-dark-white: #bdbdbd;
+--color-pink: #fe918d;
+--color-dark-pink: #fe918d;
+--color-black: #4d4d4d;
+--color-dark-gray: #4d4d4d;
+--color-grey: #616161;
+--color-light-grey: #7c7979;
+--color-blue: #73aace;
+--color-yellow: #feb546;
+--color-black: #000000;
+
+
+/* Font size */
+--font-large: 48px;
+--font-medium: 28px;
+--font-regular: 18px;
+--font-small: 16px;
+--font-micro: 14px;
+
+
+/* Font weight */
+--weight-bold: 700;
+--weight-semi-bold: 600;
+--weight-regular: 400;
+
+/* Size */
+}
+
+
+/* 
+Universal tags 
+-> 공통적으로 적용
+*/
+
+* {
+    box-sizing: border-box;
+}
+
+
+
+
