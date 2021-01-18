@@ -34,6 +34,7 @@ css에서도 프로그래밍 변수를 지정하는 것처럼 할 수 있다.
 --weight-regular: 400;
 
 /* Size */
+--size-border-radius: 4px;
 }
 
 
@@ -44,6 +45,23 @@ Universal tags
 
 * {
     box-sizing: border-box;
+}
+
+
+body {
+    font-family: 'open sans';
+    margin: 0;
+    cursor: default;
+}
+
+a{
+    text-decoration: none;/*앵커 text밑줄 없앰*/
+    color: var(--color-white);
+}
+
+ul {
+    list-style: none; /*ul list-style을 없앤다*/
+    padding-left: 0; /*40px들어가 있는 padding을 없앤다*/
 }
 
 
@@ -82,6 +100,43 @@ p{
     margin: 4px 0;
 }
 
+/* Navbar */
+
+#navbar{ /*navbar는 id선택자이기 때문에 #을 썼다*/
+    display : flex; /*박스가 양쪽에 나올 수 있도록 flex박스*/
+    justify-content: space-between;  
+    /*중심축에서 정렬하기 위해 justify-content이용
+     space-between을 이용해서 간격이 떨어져 있게 만든다.*/
+     background-color: var(--color-pink);
+     align-items: center; /*박스를 수직으로 중간에 정렬해야 함
+      중심은 수평적이고 수직은 반대이니까 align-item으로 센터로 만듦*/
+     color: var(--color-white);
+     padding: 16px;
+}
+
+.navbar__menu {
+    display: flex;
+}
+
+.navbar__logo {
+    font-size: var(--font-medium);
+    font-weight: var(--weight-semi-bold);
+}
+
+.navbar__menu__item {
+    padding: 8px 12px;
+    margin: 0 4px;
+    cursor: pointer;
+    border-radius: var(--size-border-radius);      
+
+}
 
 
+.navbar__menu__item.active {
+        border: 1px solid white;
+        border-radius: var(--size-border-radius);
+      }
 
+.navbar__menu__item:hover {
+        background-color: var(--color-yellow);    }
+    
