@@ -1,12 +1,16 @@
-<html lang="ko">
+<!DOCTYPE html>
+<html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Light-Portfolio</title>
-    <meta name="description" content="Portfolio">
-    <meta name="author" content="Light">
-    <script src="https://kit.fontawesome.com/a97fc91d77.js" crossorigin="anonymous"></script>
+    <meta 
+    name="description" 
+    content="Portfolio"
+    />
+    <meta name="author" content="Light" />
     <link rel="preconnect" href="https://fonts.gstatic.com">
+    <script src="https://kit.fontawesome.com/a97fc91d77.js" crossorigin="anonymous"></script>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
     <link rel="icon" type="image/png" href="images/favicon.png">
     <link rel="stylesheet" href="style.css">
@@ -35,6 +39,7 @@
     </div>
 </nav>
 
+
 <!-- Home -->
 <section id="home">
     <img src="images/profile.jpg" 
@@ -46,20 +51,26 @@
     <button class="home__contact">Contact me</button>
 </section>
 
+
     <!-- About -->
-<section id="About">
+<section id="about" class="section section__contatiner">
 <h1>About me</h1>
 <p>
+Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+Harum animi tempore molestiae qui, 
+eaque odio debitis repellat quod hic aut aliquam 
+nesciunt aspernatur corporis quibusdam quis rem! Alias, eius ex!
+</p>
 <div class="about__majors"> <!-- 글씨 아래부분 세 가지 쳅터 묶음 -->
     <div class="major">
         <div class="major__icon">
              <i class="fab fa-html5"></i>
         </div>
     <h2 class="major__title">Front-end</h2>
-    <p class="major__description">
+    <div class="major__description">
         HTML, CSS, JavaScript, TypeScript,
         <br />React, Vue, Web APIs
-    </p>
+    </div>
     </div>
     
     <div class="major">
@@ -70,7 +81,6 @@
     <p class="major__description">
         Android, iOS, React Native, Flutter,
         <br />Java, Swift, Kotlin
-        <br />React, Vue, Web APIs
     </p>
     </div>
 
@@ -80,28 +90,49 @@
         </div>
     <h2 class="major__title">Back-end</h2>
     <p class="major__description">
-        Java, JavaScript, Go,
+        Java, JavaScript, Go, NodeJS
         <br />Rest, APIs, GraphGL
     </p>
     </div>
 
 </div>
-</section>
-<div class="about__jobs"></div>
+<div class="about__jobs">
     <div class="job">
-        <img src="images/space x.jpg" alt="space x" class="job__logo">
+        <img 
+        src="images/space x.jpg" 
+        alt="space x" 
+        class="job__logo"
+        />
+        <div class="job__description">
         <p class="job__name">
-            Currently working at Space x as CEO
+           &nbsp; Currently working at Space x as CEO
         </p>
-        <p class="job__period">
-            2020 March - Untill now
-        </p>
+        <p class="job__period">2020 March - Untill now</p>
     </div>
-    <div class="job"></div>
-</p>
+</div>
+
+<div class="job">
+    <img 
+    src="images/space x.jpg" 
+    alt="space x" 
+    class="job__logo"
+    />
+    <div class="job__description">
+    <p class="job__name">
+        &nbsp; Currently working at Space x as CEO
+    </p>
+    <p class="job__period">2020 March - Untill now</p>
+</div>
+</div>
+</section>
+
+
+
+
+
 
     <!-- Skills -->
-<section id="Skills">
+<section id="Skills" class="section">
     <h1>Skills</h1>
     <h2>Skills & Atrrbutes</h2>
     <p>
@@ -195,7 +226,7 @@
 </section>
 
     <!-- Work -->
-    <section id="work">
+    <section id="work" class="section">
         <h1>My work</h1>
         <h3>Projects</h3>
         <div class="work__categories">
@@ -305,7 +336,7 @@
     </section>
 
     <!-- Testimonials -->
-    <section id="Testimonials">
+    <section id="Testimonials" class="section">
         <h1>Testimonials</h1>
         <h3>see what they say about me</h3>
         <div class="testimonials">
@@ -344,7 +375,7 @@
 
 
     <!-- contact -->
-    <section id="contact">
+    <section id="contact" class="section">
         <h1 class="contact__title">Let's talk</h1>
         <h2 class="contact__email">gksqlc5421@naver.com</h2>
         <div class="contact__links">
