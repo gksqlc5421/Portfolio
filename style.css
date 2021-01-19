@@ -116,35 +116,37 @@ p{
 }
 
 /* Navbar */
+  
 
 #navbar{ /*navbar는 id선택자이기 때문에 #을 썼다*/
     display : flex; /*박스가 양쪽에 나올 수 있도록 flex박스*/
     justify-content: space-between;  
     /*중심축에서 정렬하기 위해 justify-content이용
      space-between을 이용해서 간격이 떨어져 있게 만든다.*/
-     background-color: var(--color-pink);
      align-items: center; /*박스를 수직으로 중간에 정렬해야 함
       중심은 수평적이고 수직은 반대이니까 align-item으로 센터로 만듦*/
-     color: var(--color-white);
      padding: 16px;
+     background-color: #212A33;
 }
 
-.navbar__menu {
-    display: flex;
+ .navbar__menu { 
+    display: flex; 
+    color: var(--color-white);
 }
 
 .navbar__logo {
     font-size: var(--font-medium);
     font-weight: var(--weight-semi-bold);
+    color: var(--color-white);
 }
 
-.navbar__menu__item {
+ .navbar__menu__item { 
     padding: 8px 12px;
     margin: 0 4px;
     cursor: pointer;
     border-radius: var(--size-border-radius);      
 
-}
+}*
 
 
 .navbar__menu__item.active {
@@ -158,7 +160,9 @@ p{
 /* Home */
 
 #home{
-    background: url("images/homebackground.png") center/cover no-repeat;
+    background: url("images/1.png") center/cover no-repeat;
+    width: 100%;
+    height: 100%;
     padding: 40px;
     text-align: center;
 }
@@ -230,7 +234,7 @@ p{
 
 
 .major__icon:hover i{
-    color: var(--color-pink);
+    color: #212A33;
     transform: rotate(-30deg) scale(1.1)
 }
 
@@ -348,7 +352,7 @@ p{
 
 .category__btn.active,
 .category__btn:hover {
-    background-color: var(--color-pink);
+    background-color: #212A33;
     color: var(--color-white);
 }
 
@@ -476,13 +480,13 @@ p{
 }
 
 .testimonial__speech-bubble a {
-    color: var(--color-pink);
+    color: var(--color-yellow);
 }
 
 /* Contact */
 
 #contact {
-    background-color: var(--color-pink);
+    background-color: #212A33;
 }
 
 
