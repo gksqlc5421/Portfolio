@@ -89,8 +89,9 @@ h1 {
     font-size: var(--font-large);
     font-weight: var(var(--weight-bold));
     color: var(--color-black);
-    margin: 16px 0;
-/* margin 두 개 쓰면 첫 번째 것은 위아래 두 번째 것은 양옆이다. */
+    margin: 0 0;
+/* margin 두 개 쓰면 첫 번째 것은 위아래 두 번째 것은 양옆이다. 
+margin내가 16 0;에서 0 0;로 바꿈*/
 }
 
 h2{
@@ -119,15 +120,28 @@ p{
   
 
 #navbar{ /*navbar는 id선택자이기 때문에 #을 썼다*/
+    position: fixed;
     display : flex; /*박스가 양쪽에 나올 수 있도록 flex박스*/
+    width: 100%;
     justify-content: space-between;  
     /*중심축에서 정렬하기 위해 justify-content이용
      space-between을 이용해서 간격이 떨어져 있게 만든다.*/
      align-items: center; /*박스를 수직으로 중간에 정렬해야 함
       중심은 수평적이고 수직은 반대이니까 align-item으로 센터로 만듦*/
      padding: 16px;
-     background-color: #212A33;
+     background-color: transparent;
+     transition: all var(--animation-duration) ease-in-out; /* navbar의 변화가 급작스러워서 천천히 변하도록 만듦 */
 }
+/*  #212A33 -> 원래 배경색 */
+
+
+#navbar.navbar--dark {
+    background-color: #212A33;
+    padding: 8px;
+}
+
+/* navbar이면서 navbar가 dark일 때 backgroundcolor를  */
+
 
  .navbar__menu { 
     display: flex; 
@@ -171,6 +185,7 @@ p{
 #home{
     background: url("images/1.png") center/cover no-repeat;
     padding: 40px;
+    padding-top: 0px;
     text-align: center;
 }
 
